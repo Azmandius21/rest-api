@@ -87,7 +87,7 @@ func (h *Handler) GetEmployee(c *gin.Context) {
 	c.JSON(http.StatusOK, employee)
 }
 
-func (h *Handler) DeleteEmploye(c *gin.Context) {
+func (h *Handler) DeleteEmployee(c *gin.Context) {
 	id, err := strconv.Atoi(c.Param("id"))
 	if err != nil {
 		fmt.Printf("faled convert id param to int: %s\n", err.Error())
